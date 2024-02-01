@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="input">
+        <div class="row">
+            <button onclick="clr('')" class="shw">clr</button>
+            <button onclick="del()" class="shw">del</button>
+            <button onclick="show('%')" class="shw">%</button>
+            <button onclick="show('/')" class="shw">/</button>
+        </div>
+        <div class="row">
+            <button onclick="show('7')" class="shw">7</button>
+            <button onclick="show('8')" class="shw">8</button>
+            <button onclick="show('9')" class="shw">9</button>
+            <button onclick="show('*')" class="shw">x</button>
+        </div>
+        <div class="row">
+            <button onclick="show('4')" class="shw">4</button>
+            <button onclick="show('5')" class="shw">5</button>
+            <button onclick="show('6')" class="shw">6</button>
+            <button onclick="show('+')" class="shw">+</button>
+        </div>
+        <div class="row">
+            <button onclick="show('1')" class="shw">1</button>
+            <button onclick="show('2')" class="shw">2</button>
+            <button onclick="show('3')" class="shw">3</button>
+            <button onclick="show('-')" class="shw">-</button>
+        </div>
+        <div class="row">
+            <button onclick="show('00')" class="shw">00</button>
+            <button onclick="show('0')" class="shw">0</button>
+            <button onclick="show('.')" class="shw">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
